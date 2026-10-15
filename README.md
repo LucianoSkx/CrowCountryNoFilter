@@ -75,4 +75,4 @@ Patches `OnRenderImage` on `CrowCountryCamEffect`, `PSXEffects`, and `CRTEffect`
 
 ## License
 
-MIT
+[MIT](LICENSE)
