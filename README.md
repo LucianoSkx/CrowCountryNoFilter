@@ -1,8 +1,9 @@
-<p align="center"><a href="README.md">🇬🇧 English</a> · <a href="README.pt-BR.md">🇧🇷 Português</a></p>
 
 # CrowCountryCamEffectOff
 
 ![Before and After](before_after.png)
+
+<p align="center"><a href="README.md">🇬🇧 English</a> · <a href="README.pt-BR.md">🇧🇷 Português</a></p>
 
 A BepInEx plugin that disables all camera filters (CRT, PSX, SFB, grain, noise) in Crow Country.
 
