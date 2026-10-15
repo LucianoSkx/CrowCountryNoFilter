@@ -1,4 +1,4 @@
-[🇬🇧 English](README.md) · [🇧🇷 Português](README.pt-BR.md)
+<p align="center"><a href="README.md">🇬🇧 English</a> · <a href="README.pt-BR.md">🇧🇷 Português</a></p>
 
 # CrowCountryCamEffectOff
 
