@@ -11,6 +11,9 @@ A BepInEx plugin that disables all camera filters (CRT, PSX, SFB, grain, noise) 
 
 ## Installation
 
+**Easiest: download the pre-built DLL from [Latest Release](https://github.com/LucianoSkx/CrowCountryNoFilter/releases/latest) and drop into `BepInEx/plugins/`.**
+
+
 ### Windows
 
 1. Install BepInEx 5.4.23+ to your Crow Country folder
@@ -60,7 +63,7 @@ chmod +x build.sh
 ./build.sh
 ```
 
-Set the `GameDir` environment variable if your game is not in the default location:
+Usually the script auto-detects common install paths. Override if needed:
 
 ```bash
 GameDir="/path/to/Crow Country" ./build.sh
