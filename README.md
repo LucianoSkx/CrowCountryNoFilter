@@ -21,12 +21,21 @@ A BepInEx plugin that disables all camera filters (CRT, PSX, SFB, grain, noise) 
 ### Linux (Proton/Wine)
 
 1. Install BepInEx 5.4.23+ to your Crow Country folder
-2. Register the DLL override in the Wine prefix:
+2. Copy `CrowCountryCamEffectOff.dll` to `BepInEx/plugins/`
+
+3. Add this to the Steam launch option for Crow Country:
    ```
-   [Software\\Wine\\AppDefaults\\Crow Country.exe\\DllOverrides]
-   "winhttp"="native,builtin"
+   WINEDLLOVERRIDES="winhttp=n,b" %command%
    ```
-3. Copy `CrowCountryCamEffectOff.dll` to `BepInEx/plugins/`
+   Or register permanently in the Wine prefix with:
+   ```
+   STEAM_COMPAT_APP_ID=1996010 \
+   STEAM_COMPAT_DATA_PATH="/path/to/CrowCountry/compatdata/1996010" \
+     proton run reg.exe add \
+     "HKCU\\Software\\Wine\\AppDefaults\\Crow Country.exe\\DllOverrides" \
+     /v winhttp /t REG_SZ /d native,builtin /f
+   ```
+
 4. Run the game once to generate the config
 5. Edit `BepInEx/config/luciano.crowcountry.camoff.cfg` if needed
 
