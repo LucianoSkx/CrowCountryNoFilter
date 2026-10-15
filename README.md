@@ -1,5 +1,7 @@
 # CrowCountryCamEffectOff
 
+![Game Screenshot](screenshot.jpg)
+
 A BepInEx plugin that disables all camera filters (CRT, PSX, SFB, grain, noise) in Crow Country.
 
 ## Requirements
